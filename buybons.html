@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BUYBONS — AI · Content · Digital Hustle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'DM Sans',sans-serif;color:#1a1a1a;background:#fff;}
+  a{color:inherit;text-decoration:none;}
+
+  /* HERO */
+  .bb-hero{background:#0a0a0a;color:#fff;padding:3.5rem 2rem 3rem;position:relative;overflow:hidden;}
+  .bb-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:300px;height:300px;border-radius:50%;background:rgba(255,140,60,0.10);pointer-events:none;}
+  .bb-logo{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;letter-spacing:-1px;color:#FF8C3C;}
+  .bb-logo span{color:#fff;}
+  .bb-tagline{font-size:0.95rem;color:#aaa;margin-top:0.3rem;font-weight:300;letter-spacing:0.06em;}
+  .bb-hero-headline{font-family:'Syne',sans-serif;font-size:1.9rem;font-weight:700;line-height:1.2;margin-top:1.75rem;max-width:520px;}
+  .bb-hero-sub{font-size:0.97rem;color:#bbb;margin-top:0.85rem;max-width:440px;line-height:1.7;}
+  .bb-cta-row{display:flex;gap:12px;margin-top:1.75rem;flex-wrap:wrap;}
+  .bb-btn-primary{background:#FF8C3C;color:#fff;border:none;padding:0.75rem 1.6rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:500;cursor:pointer;transition:opacity 0.15s;display:inline-block;}
+  .bb-btn-primary:hover{opacity:0.85;}
+  .bb-btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.22);padding:0.75rem 1.6rem;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.95rem;cursor:pointer;transition:background 0.15s;display:inline-block;}
+  .bb-btn-ghost:hover{background:rgba(255,255,255,0.08);}
+
+  /* SECTIONS */
+  .bb-section{padding:2.5rem 2rem;max-width:860px;margin:0 auto;}
+  .bb-section-label{font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#FF8C3C;margin-bottom:0.4rem;}
+  .bb-section-title{font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:#0a0a0a;margin-bottom:1.5rem;}
+  hr.bb-divider{border:none;border-top:1px solid #f0f0f0;margin:0 2rem;}
+
+  /* PILLARS */
+  .bb-pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;}
+  .bb-pillar{background:#fafafa;border:1px solid #f0f0f0;border-radius:12px;padding:1.1rem 1rem;}
+  .bb-pillar-icon{font-size:1.6rem;margin-bottom:0.5rem;}
+  .bb-pillar-name{font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:#0a0a0a;margin-bottom:4px;}
+  .bb-pillar-desc{font-size:0.8rem;color:#666;line-height:1.55;}
+
+  /* SERVICES */
+  .bb-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+  .bb-service{background:#fafafa;border:1px solid #f0f0f0;border-radius:10px;padding:1rem 1.1rem;}
+  .bb-service-title{font-size:0.9rem;font-weight:500;color:#0a0a0a;margin-bottom:5px;}
+  .bb-service-desc{font-size:0.78rem;color:#777;line-height:1.5;}
+
+  /* ABOUT */
+  .bb-about p{font-size:0.95rem;line-height:1.75;color:#444;margin-bottom:0.85rem;}
+  .bb-about strong{color:#0a0a0a;}
+  .bb-socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:1rem;}
+  .bb-social-chip{display:flex;align-items:center;gap:7px;background:#fafafa;border:1px solid #f0f0f0;border-radius:24px;padding:0.45rem 1rem;font-size:0.82rem;color:#555;}
+  .bb-social-chip .ic{font-size:1rem;}
+
+  /* FOOTER */
+  .bb-footer{background:#0a0a0a;color:#888;padding:2rem 2rem;font-size:0.8rem;}
+  .bb-footer-inner{max-width:860px;margin:0 auto;}
+  .bb-footer-logo{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:800;color:#FF8C3C;margin-bottom:6px;}
+  .bb-footer p{margin-bottom:4px;}
+  .bb-footer-copy{margin-top:1.25rem;color:#444;font-size:0.75rem;}
+
+  @media(max-width:480px){
+    .bb-logo{font-size:2.2rem;}
+    .bb-hero-headline{font-size:1.45rem;}
+    .bb-section{padding:2rem 1.25rem;}
+    hr.bb-divider{margin:0 1.25rem;}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="bb-hero">
+  <div class="bb-logo">BUY<span>BONS</span></div>
+  <div class="bb-tagline">AI &nbsp;·&nbsp; Content &nbsp;·&nbsp; Digital Hustle</div>
+  <div class="bb-hero-headline">Building real income online — from zero, for real people</div>
+  <div class="bb-hero-sub">AI tips, content creation guides, and honest online hustle — built from scratch in South Africa.</div>
+  <div class="bb-cta-row">
+    <a href="#services" class="bb-btn-primary">See what we offer</a>
+    <a href="#about" class="bb-btn-ghost">Our story</a>
+  </div>
+</div>
+
+<!-- PILLARS -->
+<div class="bb-section" id="pillars">
+  <div class="bb-section-label">What we do</div>
+  <div class="bb-section-title">The BUYBONS pillars</div>
+  <div class="bb-pillars">
+    <div class="bb-pillar">
+      <div class="bb-pillar-icon">🤖</div>
+      <div class="bb-pillar-name">AI for beginners</div>
+      <div class="bb-pillar-desc">Simple tutorials on free AI tools anyone can use to work smarter and earn faster.</div>
+    </div>
+    <div class="bb-pillar">
+      <div class="bb-pillar-icon">📱</div>
+      <div class="bb-pillar-name">Online income</div>
+      <div class="bb-pillar-desc">Proven ways to make money from a phone and a laptop — no office, no boss.</div>
+    </div>
+    <div class="bb-pillar">
+      <div class="bb-pillar-icon">🎬</div>
+      <div class="bb-pillar-name">Content creation</div>
+      <div class="bb-pillar-desc">Building influence on TikTok, YouTube, X, and Facebook from the ground up.</div>
+    </div>
+    <div class="bb-pillar">
+      <div class="bb-pillar-icon">🌍</div>
+      <div class="bb-pillar-name">Brand building</div>
+      <div class="bb-pillar-desc">Turning a name into a recognisable online brand — step by step, for free.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="bb-divider"/>
+
+<!-- SERVICES -->
+<div class="bb-section" id="services">
+  <div class="bb-section-label">Services</div>
+  <div class="bb-section-title">What BUYBONS offers</div>
+  <div class="bb-services">
+    <div class="bb-service">
+      <div class="bb-service-title">AI content writing</div>
+      <div class="bb-service-desc">Posts, captions, and articles written with AI for your business or brand.</div>
+    </div>
+    <div class="bb-service">
+      <div class="bb-service-title">Canva design</div>
+      <div class="bb-service-desc">Social media graphics, CVs, and flyers designed with Canva AI.</div>
+    </div>
+    <div class="bb-service">
+      <div class="bb-service-title">Social media setup</div>
+      <div class="bb-service-desc">Help setting up and optimising TikTok, YouTube, and Facebook pages.</div>
+    </div>
+    <div class="bb-service">
+      <div class="bb-service-title">AI coaching (beginner)</div>
+      <div class="bb-service-desc">1-on-1 guidance for people who want to start using AI tools to earn online.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="bb-divider"/>
+
+<!-- ABOUT -->
+<div class="bb-section" id="about">
+  <div class="bb-section-label">The story</div>
+  <div class="bb-section-title">About BUYBONS</div>
+  <div class="bb-about">
+    <p>BUYBONS was started by a <strong>36-year-old Nigerian living in South Africa</strong>, building an online income from absolutely nothing — just a phone, a microphone, and a hunger to grow.</p>
+    <p>This brand is proof that <strong>you do not need a degree, a big budget, or the perfect situation</strong> to start. You need the right tools, the right knowledge, and the courage to begin.</p>
+    <p>Follow the journey on social media and learn alongside us:</p>
+  </div>
+  <div class="bb-socials">
+    <div class="bb-social-chip"><span class="ic">📱</span> @buybons on TikTok</div>
+    <div class="bb-social-chip"><span class="ic">▶️</span> BUYBONS on YouTube</div>
+    <div class="bb-social-chip"><span class="ic">✖️</span> @buybons on X</div>
+    <div class="bb-social-chip"><span class="ic">👤</span> BUYBONS on Facebook</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="bb-footer">
+  <div class="bb-footer-inner">
+    <div class="bb-footer-logo">BUYBONS</div>
+    <p>Building online from South Africa &nbsp;·&nbsp; AI &nbsp;·&nbsp; Content &nbsp;·&nbsp; Hustle</p>
+    <p>hello@buybons.com</p>
+    <div class="bb-footer-copy">© 2025 BUYBONS. All rights reserved.</div>
+  </div>
+</div>
+
+</body>
+</html>
